@@ -129,6 +129,9 @@ function FindProxyForURL(url, host) { // variable strings to return // a Caixa d
     }
     if (shExpMatch(url, "*.forceusercontent.com*")) {
         return returnProxy(url, host, proxy_caixa, "I");
+    }
+	if (shExpMatch(url, "*viewnext*") || shExpMatch(url, "*teams.microsoft.com*") || shExpMatch(url, "*statics.teams.cdn.office.net*") || shExpMatch(url, "*.teams.*") || shExpMatch(url, "*microsoft*") || shExpMatch(url, "*slack-core.com*") || shExpMatch(url, "*slack-redir.net*")) {
+        return returnProxy(url, host, proxy_no, "a");
     } // Proxy anything else
     return returnProxy(url, host, proxy_no, "Y");
 }
