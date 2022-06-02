@@ -31,9 +31,9 @@ function FindProxyForURL(url, host) { // variable strings to return // a Caixa d
     if (shExpMatch(host, "fedsrv.caixabank.com")) {
         return returnProxy(url, host, proxy_caixa, "J2");
     } // caixatf.q-go.net //
-    if (shExpMatch(url, "https://email.lacaixa.es*")) {
-        return returnProxy(url, host, proxy_no, "F");
-    } // per al correu OWA podem anar sense proxy
+    //if (shExpMatch(url, "https://email.lacaixa.es*")) {
+    //    return returnProxy(url, host, proxy_no, "F");
+    //} // per al correu OWA podem anar sense proxy
     if (shExpMatch(url, "http*://arwnew.lacaixa.es*")) {
         return returnProxy(url, host, proxy_no, "G");
     } //per activar VPN CBK per a empreses externes
