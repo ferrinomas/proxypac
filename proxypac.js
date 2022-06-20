@@ -1,15 +1,16 @@
 function FindProxyForURL(url, host) { // variable strings to return // a Caixa desde IBM //
-    var proxy_caixa = "PROXY 10.115.4.2:8080"; //
-    var proxy_caixa = "PROXY 10.115.4.1:8080"; //
-    var proxy_caixa = "PROXY 10.117.20.47:8080"; //
+    var proxy_caixa = "PROXY 10.120.200.200:8080"; //
+    //var proxy_caixa = "PROXY 10.115.4.2:8080"; //
+    //var proxy_caixa = "PROXY 10.115.4.1:8080"; //
+    //var proxy_caixa = "PROXY 10.117.20.47:8080"; //
     var proxy_ibm = "DIRECT";
     var proxy_ibm = "PROXY proxy.emea.ibm.com:8080";
     var proxy_no = "DIRECT";
     var proxy_caixa_nexe = "PROXY proxynexe.svb.lacaixa.es:8080"; //Nou Proxy d'accés a Caixa per a proveedors
-    var proxy_caixa_10_115 = "PROXY 10.115.4.2:8080";
-    var proxy_caixa_10_113 = "PROXY 10.113.10.13:8080"; // Demana login en popup
-    var proxy_caixa_10_121 = "PROXY 10.121.33.29:8080";
-    var proxy_caixa = proxy_caixa_10_115;
+    //var proxy_caixa_10_115 = "PROXY 10.115.4.2:8080";
+    //var proxy_caixa_10_113 = "PROXY 10.113.10.13:8080"; // Demana login en popup
+    //var proxy_caixa_10_121 = "PROXY 10.121.33.29:8080";
+    //var proxy_caixa = proxy_caixa_10_115;
     if (isInNet(host, "192.168.0.0", "255.255.255.0")) {
         return returnProxy(url, host, proxy_no, "A");
     } // Xarxa local
