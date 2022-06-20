@@ -1,5 +1,5 @@
 function FindProxyForURL(url, host) { // variable strings to return // a Caixa desde IBM //
-    var proxy_caixa = "PROXY 10.120.200.200:8080"; //
+    var proxy_caixa = "PROXY proxynexe.svb.lacaixa.es"; //
     //var proxy_caixa = "PROXY 10.115.4.2:8080"; //
     //var proxy_caixa = "PROXY 10.115.4.1:8080"; //
     //var proxy_caixa = "PROXY 10.117.20.47:8080"; //
